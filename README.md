@@ -18,15 +18,13 @@ The training dataset is in the folder named **IndiaSat_dataset.zip**.
 
 ## Shapefiles used as Google Earth Engine Assets
 The following shapefiles were used to download the images, train the classifier and predict the landcover in various Indian districts.
-* **India_Boundary.zip / India_Boundary.geojson**- Boundary for India.
-* **india_district_boundaries.zip**- Boundaries for all Indian districts. 
+* **India_Boundary.zip / India_Boundary.geojson** - Boundary for India.
+* **india_district_boundaries.zip** - Boundaries for all Indian districts. 
 
 ## Scripts
-The following scripts are used for the project in order of execution.
-* **monthly_prediction.js**-  To obtain monthly classification results of a given area using GEE (Google Earth Engine).
-* **final_yearly_prediction.ipynb**-  To calculate the final prediction (land-cover classes) of a given area using the monthly prediction results. 
-
-### A detailed step-wise description of the implementation is present in the wiki pages of this repository
+A detailed step-wise description of the implementation is present in the wiki pages of this repository. The following scripts are used for the project in order of execution-
+* **monthly_prediction.js** -  To obtain monthly classification results of a given area using GEE (Google Earth Engine).
+* **final_yearly_prediction.ipynb** -  To calculate the final prediction (land-cover classes) of a given area using the monthly prediction results. 
 
 ## Contact
 If you have problems, questions, ideas or suggestions, please contact us by posting to this mailing list-
