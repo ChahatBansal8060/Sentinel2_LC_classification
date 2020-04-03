@@ -25,6 +25,11 @@ The following shapefiles were used to download the images, train the classifier 
 A detailed step-wise description of the implementation is present in the wiki pages of this repository. The following scripts are used for the project in order of execution-
 * **monthly_prediction.js** -  To obtain monthly classification results of a given area using GEE (Google Earth Engine).
 * **final_yearly_prediction.ipynb** -  To calculate the final prediction (land-cover classes) of a given area using the monthly prediction results. 
+* **temporal_correction.py** - To temporally correct the land cover predictions over different years.
+
+## Results
+The results are stored in Google Drive- 
+* **Results.zip** - This folder contains the results of all scripts for different districts in the zipped folders **Classification_Bangalore.zip, Classification_Chennai.zip, Classification_Delhi.zip, Classification_Gurgaon.zip, Classification_Hyderabad.zip, Classification_Kolkata.zip, and Classification_Mumbai.zip**. All these zipped folders have a folder name **final** which contains both yearly predictions and temporally corrected images for all years.
 
 ## Contact
 If you have problems, questions, ideas or suggestions, please contact us by posting to this mailing list-
