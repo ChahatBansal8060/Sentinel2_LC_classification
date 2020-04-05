@@ -29,7 +29,7 @@ A detailed step-wise description of the implementation is present in the wiki pa
 
 ## Results
 The results are stored in Google Drive- https://drive.google.com/open?id=18FEgnJKJQ4bl9sNREBmeYZx70A8PJsXL
-* **Results.zip** - This folder contains the results of all scripts for different districts in the zipped folders **Classification_Bangalore.zip, Classification_Chennai.zip, Classification_Delhi.zip, Classification_Gurgaon.zip, Classification_Hyderabad.zip, Classification_Kolkata.zip, and Classification_Mumbai.zip**. All these zipped folders have a folder name **final** which contains both yearly predictions and temporally corrected images for all years.
+* **IndiaSat_Results.zip** - This folder contains the results of all scripts for different districts in the zipped folders **Classification_Bangalore.zip, Classification_Chennai.zip, Classification_Delhi.zip, Classification_Gurgaon.zip, Classification_Hyderabad.zip, Classification_Kolkata.zip, and Classification_Mumbai.zip**. All these zipped folders have a folder name **final** which contains both yearly predictions and temporally corrected images for all years.
 
 ## Contact
 If you have problems, questions, ideas or suggestions, please contact us by posting to this mailing list-
