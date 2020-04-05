@@ -28,7 +28,7 @@ A detailed step-wise description of the implementation is present in the wiki pa
 * **temporal_correction.py** - To temporally correct the land cover predictions over different years.
 
 ## Results
-The results are stored in Google Drive- https://drive.google.com/open?id=18FEgnJKJQ4bl9sNREBmeYZx70A8PJsXL
+The results are stored in Google Drive- https://drive.google.com/open?id=10KZTHVnWcCzBHyBgrdB4-Gydpab1cclq
 * **IndiaSat_Results.zip** - This folder contains the results of all scripts for different districts in the zipped folders **Classification_Bangalore.zip, Classification_Chennai.zip, Classification_Delhi.zip, Classification_Gurgaon.zip, Classification_Hyderabad.zip, Classification_Kolkata.zip, and Classification_Mumbai.zip**. All these zipped folders have a folder name **final** which contains both yearly predictions and temporally corrected images for all years.
 
 ## Contact
