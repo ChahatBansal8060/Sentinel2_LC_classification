@@ -14,18 +14,22 @@ In this project, we have addressed various challenges in land cover classificati
 * QGIS and Google Earth Pro for visualization of results
 
 ## Dataset
-The training dataset is in the folder named **IndiaSat_dataset.zip**.
+1) The training dataset is in the folder named **IndiaSat_dataset.zip**.
+2) The testing dataset is created for 3 districts (Gurgaon, Hyderabad, and Mumbai) for the year 2018 and is stored in the folder names **groundtruth_shapefiles.zip** 
 
 ## Shapefiles used as Google Earth Engine Assets
 The following shapefiles were used to download the images, train the classifier and predict the landcover in various Indian districts.
-* **India_Boundary.zip / India_Boundary.geojson** - Boundary for India.
-* **india_district_boundaries.zip** - Boundaries for all Indian districts. 
+1) **India_Boundary.zip / India_Boundary.geojson** - Boundary for India.
+2) **india_district_boundaries.zip** - Boundaries for all Indian districts. 
 
 ## Scripts
 A detailed step-wise description of the implementation is present in the wiki pages of this repository. The following scripts are used for the project in order of execution-
-* **monthly_prediction.js** -  To obtain monthly classification results of a given area using GEE (Google Earth Engine).
-* **final_yearly_prediction.ipynb** -  To calculate the final prediction (land-cover classes) of a given area using the monthly prediction results. 
-* **temporal_correction.py** - To temporally correct the land cover predictions over different years.
+1) **monthly_prediction.js** -  To obtain monthly classification results of a given area using GEE (Google Earth Engine).
+2) **final_yearly_prediction.ipynb** -  To calculate the final prediction (land-cover classes) of a given area using the monthly prediction results. 
+3) **temporal_correction.py** - To temporally correct the land cover predictions over different years.
+4) **png_to_tif.ipynb** - To convert the PNG predictions of temporal correction into GeoTIFF files.
+5) **Cut_tifffile_using_groundtruth_shapefiles.ipynb** - To cut out the areas of GeoTIFF files against which the ground-truth is available for testing the classifier's accuracy.
+6) **Compute_accuracies.ipynb** - To compute the land-cover classifier's accuracy, precision, and recall for the districts against which the ground truth is available in groundtruth_shapefiles.zip.  
 
 ## Results
 The results are stored in Google Drive- https://drive.google.com/open?id=10KZTHVnWcCzBHyBgrdB4-Gydpab1cclq
