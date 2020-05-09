@@ -1,0 +1,18 @@
+unzip Classification_Bangalore.zip
+unzip Classification_Chennai.zip
+unzip Classification_Delhi.zip
+unzip Classification_Gurgaon.zip
+unzip Classification_Hyderabad.zip
+unzip Classification_Kolkata.zip
+unzip Classification_Mumbai.zip
+
+unzip groundtruth_shapefiles.zip
+
+python3 final_yearly_prediction.py
+python3 temporal_correction.py
+
+python3 png_to_tif.py
+python3 Cut_tifffile_using_groundtruth_shapefiles.py
+python3 Compute_accuracies.py
+
+

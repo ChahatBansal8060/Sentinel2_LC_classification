@@ -190,7 +190,8 @@ for district in districts:
     print (district)
     main_folder = 'Classification_'+district
     
-    os.makedirs(main_folder+"/final/temporally_correct_predictions",exist_ok=True)
+    os.makedirs('Landcover_Predictions_Using_IndiaSat/'+district,exist_ok=True)
+    #os.makedirs(main_folder+"/final/temporally_correct_predictions",exist_ok=True)
     years = [16,17, 18,19]
     
     dataset = [ np.array(Image.open(main_folder+'/final/'+district+'_prediction_20'+str(i)+'.png')) for i in years]
@@ -248,7 +249,8 @@ for district in districts:
     # storing corrected images
     for i in range(len(years)):
             dataset[i] = (Image.fromarray(dataset[i])).convert("L")
-            dataset[i].save(main_folder+'/final/temporally_correct_predictions/'+district+'_prediction_20'+str(years[i])+'.png')
+            #dataset[i].save(main_folder+'/final/temporally_correct_predictions/'+district+'_prediction_20'+str(years[i])+'.png')
+            dataset[i].save('Landcover_Predictions_Using_IndiaSat/'+district+'/'+district+'_prediction_20'+str(years[i])+'.png')
 	    
 
 
