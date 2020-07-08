@@ -195,17 +195,29 @@ for district in districts:
     years = [16,17, 18,19]
     
     dataset = [ np.array(Image.open(main_folder+'/final/'+district+'_prediction_20'+str(i)+'.png')) for i in years]
+    image_dimensions = dataset[0].shape
     
     # verify all images have same number of background pixels
     backgroundPixels = np.unique(dataset[0],return_counts=True)[1][0] #With [1] access frequency list, with [0] get frequency of background pixels
     
-    if not all( np.unique(dataset[k],return_counts = True)[1][0] == backgroundPixels for k in range(len(dataset))):
-        print("inconsistency in number of background pixels across years\n")
-        raise SystemExit
-    
-    image_dimensions = dataset[0].shape
-    patterns = []
+    # If the background pixel count in each year's image is not same, mark pixel as background in all years if it is 0 in any year  
+    if not all( np.unique(dataset[k],return_counts = True)[1][0] == backgroundPixels for k in range(len(dataset))):        
+        print("Resolving inconsistency in the number of background pixels across years")
+        for i in range(image_dimensions[0]):
+            for j in range(image_dimensions[1]):
+                res = False
+                res = True in (image[i][j] == 0 for image in dataset) 
+                if res == True:
+                    for image in dataset:
+                        image[i][j] = 0
 
+    backgroundPixels = np.unique(dataset[0],return_counts=True)[1][0] #With [1] access frequency list, with [0] get frequency of background pixels
+    if not all( np.unique(dataset[k],return_counts = True)[1][0] == backgroundPixels for k in range(len(dataset))):        
+        print("Inconsistencies in the number of background pixels across years still exists\n")
+        break
+    
+
+    patterns = []
     for i in range(image_dimensions[0]):
         for j in range(image_dimensions[1]):
             if(dataset[0][i][j] == 0):
