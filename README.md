@@ -32,8 +32,7 @@ A detailed step-wise description of the implementation is present in the wiki pa
 6) **Compute_accuracies.ipynb** - To compute the land-cover classifier's accuracy, precision, and recall for the districts against which the ground truth is available in groundtruth_shapefiles.zip.  
 
 ## Results
-The results are stored in Google Drive- https://drive.google.com/open?id=10KZTHVnWcCzBHyBgrdB4-Gydpab1cclq
-* **IndiaSat_Results.zip** - This folder contains the results of all scripts for different districts in the zipped folders **Classification_Bangalore.zip, Classification_Chennai.zip, Classification_Delhi.zip, Classification_Gurgaon.zip, Classification_Hyderabad.zip, Classification_Kolkata.zip, and Classification_Mumbai.zip**. All these zipped folders have a folder name **final** which contains both yearly predictions and temporally corrected images for all years.
+The results are stored in **Landcover\_Predictions\_Using\_IndiaSat**. It stores the tiff files and the png files of land-cover prediction of all years for all districts
 
 ## Contact
 If you have problems, questions, ideas or suggestions, please contact us by posting to this mailing list-
